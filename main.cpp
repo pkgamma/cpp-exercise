@@ -2,6 +2,9 @@
 // Description: c++ program, following what Google is telling me to do
 
 #include <iostream>
+
+// nice editior.
+
 using std::cout;
 using std::endl;
 using std::cin;
