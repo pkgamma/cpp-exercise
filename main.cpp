@@ -5,35 +5,41 @@
 
 // nice editior.
 
+using std::cin;
 using std::cout;
 using std::endl;
-using std::cin;
 
-int main() {
+int main()
+{
 
-    const int MAX_LOOPS = 5;
+    const int MAX_NUM_OF_LINES = 5;
 
-    for (int i = 0; i < MAX_LOOPS; i++) {
+    for (int i = 0; i < MAX_NUM_OF_LINES; i++)
+    {
         cout << "Hello, CS126! Getting started in C++, this is exciting!" << endl;
     }
 
     cout << "Editing in VSCode. Editing in Xcode now! Nope, in CLion now! Should I try Vim?" << endl;
 
-    int input_var = 0;
+    int inputNumber = 0;
 
-    do {
+    do
+    {
         cout << "Enter a number, or enter -1 to quit: ";
 
-        if (!(cin >> input_var)) {
+        if (!(cin >> inputNumber))
+        {
             cout << "NOT NUMBER!" << endl;
             break;
         }
 
-        if (input_var != -1) {
-            cout << "You entered: " << input_var << endl;
+        if (inputNumber != -1)
+        {
+            cout << "You entered: " << inputNumber
+                 << endl;
         }
 
-    } while (input_var != -1);
+    } while (inputNumber != -1);
 
     cout << "Bye bye." << endl;
 
