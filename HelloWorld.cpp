@@ -1,21 +1,14 @@
 // hello.cpp: Philip Kuo
 // Description: c++ program, following what Google is telling me to do
-
 #include <iostream>
-
-// nice editior.
-
 using std::cin;
 using std::cout;
 using std::endl;
 
-int main()
-{
-
+int main() {
     const int MAX_NUM_OF_LINES = 5;
 
-    for (int i = 0; i < MAX_NUM_OF_LINES; i++)
-    {
+    for (int i = 0; i < MAX_NUM_OF_LINES; i++) {
         cout << "Hello, CS126! Getting started in C++, this is exciting!" << endl;
     }
 
@@ -23,20 +16,17 @@ int main()
 
     int inputNumber = 0;
 
-    do
-    {
+    do {
         cout << "Enter a number, or enter -1 to quit: ";
 
-        if (!(cin >> inputNumber))
-        {
+        if (!(cin >> inputNumber)) {
             cout << "NOT NUMBER!" << endl;
-            break;
+            cin.clear();
+            cin.ignore('\n');
         }
-
-        if (inputNumber != -1)
-        {
-            cout << "You entered: " << inputNumber
-                 << endl;
+        
+        if (inputNumber != -1) {
+            cout << "You entered: " << inputNumber << endl;
         }
 
     } while (inputNumber != -1);
