@@ -25,4 +25,23 @@ int main() {
     scorePtr = &score;
 
     cout << scorePtr << endl;
+    cout << "This should print the score: " << *scorePtr << endl;
+
+    // Address-of operator (&): returns the memory address of its operand.
+    // Contents-of (or dereference) operator (*): returns the value of the
+    // variable located at the address specified by its operand.
+
+    int var = 590;
+    int *p;
+    p = &var;
+
+    cout << var << endl;
+    // Outputs 50 (the value of var)
+
+    cout << p << endl;
+    // Outputs 0x29fee8 (var's memory location)
+
+    cout << *p << endl;
+    /* Outputs 50 (the value of the variable
+     stored in the pointer p) */
 }
