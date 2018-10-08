@@ -1,7 +1,7 @@
 {
     "files.associations": {
-        "ostream": "cpp",
-        "iostream": "cpp"
+        "*.tpp": "cpp"
     },
-    "cSpell.language": "en"
+    "cSpell.language": "en",
+    "terminal.integrated.shell.windows": "cmd.exe"
 }
