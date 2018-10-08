@@ -9,10 +9,13 @@ int main() {
     const int MAX_NUM_OF_LINES = 5;
 
     for (int i = 0; i < MAX_NUM_OF_LINES; i++) {
-        cout << "Hello, CS126! Getting started in C++, this is exciting!" << endl;
+        cout << "Hello, CS126! Getting started in C++, this is exciting!"
+             << endl;
     }
 
-    cout << "Editing in VSCode. Editing in Xcode now! Nope, in CLion now! Should I try Vim?" << endl;
+    cout << "Editing in VSCode. Editing in Xcode now! Nope, in CLion now! "
+            "Should I try Vim?"
+         << endl;
 
     int inputNumber = 0;
 
@@ -24,7 +27,7 @@ int main() {
             cin.clear();
             cin.ignore('\n');
         }
-        
+
         if (inputNumber != -1) {
             cout << "You entered: " << inputNumber << endl;
         }
