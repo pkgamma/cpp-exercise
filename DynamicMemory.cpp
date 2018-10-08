@@ -10,7 +10,6 @@ using namespace std;
 // allocated.
 
 int main() {
-    new int;
 
     //! The pointer p is stored in the stack as a local variable, and holds the
     //! heap's allocated address as its value. The value of 5 is stored at that
@@ -28,4 +27,16 @@ int main() {
     //! stack.
 
     p = new int;  // reuse for a new address
+
+    // It's a good practice to assign NULL to a pointer variable when you
+    // declare it, in case you do not have exact address to be assigned. A
+    // pointer assigned NULL is called a null pointer. For example: int *ptr =
+    // NULL;
+
+    int *k = NULL;    // Pointer initialized with null
+    k = new int[20];  // Request memory
+    delete[] k;       // Delete array pointed to by k
+
+    //! delete de-allocates memory on the heap
+    //! new allocates space dynamically on the heap
 }
